@@ -1,0 +1,51 @@
+{
+  "name": "tecnoimagen",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@react-pdf/renderer": "^4.3.1",
+    "@vercel/blob": "^0.23.4",
+    "axios": "^1.11.0",
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^12.23.25",
+    "html2canvas": "^1.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "jspdf": "^3.0.4",
+    "lucide-react": "^0.543.0",
+    "moment": "^2.30.1",
+    "mongoose": "^8.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.8.2",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.15"
+  }
+}
