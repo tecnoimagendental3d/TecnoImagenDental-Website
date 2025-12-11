@@ -42,7 +42,7 @@ const Footer = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <motion.div
             className="space-y-4 md:col-span-2 lg:col-span-1"
@@ -93,7 +93,7 @@ const Footer = () => {
           </motion.div>
         </div>
         <motion.div
-          className="border-t border-gray-600 py-8 mt-16"
+          className="border-t border-gray-600 py-6 mt-12"
           variants={itemVariants}
         >
           <div className="flex justify-center items-center">
