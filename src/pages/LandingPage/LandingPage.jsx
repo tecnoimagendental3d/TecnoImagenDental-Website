@@ -11,8 +11,8 @@ const LandingPage = () => {
       <Header />
       <main>
         <Hero />
-        <Features />
-        <Testimonials />
+        {/* <Features />
+        <Testimonials /> */}
         <Footer />
       </main>
     </div>

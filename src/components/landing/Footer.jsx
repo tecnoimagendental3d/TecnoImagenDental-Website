@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Twitter, Github, Linkedin } from "lucide-react";
 import LOGO from "../../assets/Logo/Logo-Horizontal06.png";
 import { motion } from "framer-motion";
 
@@ -9,21 +8,6 @@ const FooterLink = ({ href, to, children }) => {
     return <Link to={to} className={className}>{children}</Link>;
   }
   return <a href={href} className={className}>{children}</a>;
-};
-
-const SocialLink = ({ href, children }) => {
-  return (
-    <motion.a
-      href={href}
-      className="w-10 h-10 bg-primary-dark/80 hover:bg-primary-teal rounded-lg flex items-center justify-center transition-all duration-300 group border border-gray-600"
-      target="_blank"
-      rel="noopener noreferrer"
-      whileHover={{ scale: 1.1, rotate: 6 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <span className="text-gray-100 group-hover:text-white transition-colors duration-300">{children}</span>
-    </motion.a>
-  );
 };
 
 const Footer = () => {
@@ -72,38 +56,38 @@ const Footer = () => {
               />
             </Link>
             <p className="text-gray-100 leading-relaxed max-w-sm hover:text-primary-teal transition-colors duration-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Especialistas en imagenología dental 3D. Ofrecemos tecnología de vanguardia para diagnósticos precisos y tratamientos efectivos.
             </p>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Lorem Ipsum</h3>
+            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Servicios</h3>
             <ul className="space-y-2">
               <li>
-                <FooterLink href="#features">Lorem Ipsum</FooterLink>
+                <FooterLink href="#features">Tomografía 3D</FooterLink>
               </li>
               <li>
-                <FooterLink href="#testimonials">Dolor Sit</FooterLink>
+                <FooterLink href="#testimonials">Radiografías Panorámicas</FooterLink>
               </li>
               <li>
-                <FooterLink href="#faq">Amet Consectetur</FooterLink>
+                <FooterLink href="#faq">Cefalometrías</FooterLink>
               </li>
             </ul>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Adipiscing Elit</h3>
+            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Empresa</h3>
             <ul className="space-y-2">
-              <li><FooterLink to="/about">Sed Do Eiusmod</FooterLink></li>
-              <li><FooterLink to="/contact">Tempor Incididunt</FooterLink></li>
+              <li><FooterLink to="/about">Sobre Nosotros</FooterLink></li>
+              <li><FooterLink to="/contact">Contacto</FooterLink></li>
             </ul>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Magna Aliqua</h3>
+            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <FooterLink to="/privacy">Ut Enim Ad</FooterLink>
+                <FooterLink to="/privacy">Política de Privacidad</FooterLink>
               </li>
               <li>
-                <FooterLink to="/terms">Minim Veniam</FooterLink>
+                <FooterLink to="/terms">Términos y Condiciones</FooterLink>
               </li>
             </ul>
           </motion.div>
@@ -112,21 +96,10 @@ const Footer = () => {
           className="border-t border-gray-600 py-8 mt-16"
           variants={itemVariants}
         >
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex justify-center items-center">
             <p className="text-gray-100 hover:text-primary-teal transition-colors duration-300">
-              &copy; 2025 Lorem Ipsum. All rights reserved.
+              &copy; 2025 TecnoImagen Dental 3D. Todos los derechos reservados.
             </p>
-            <div className="flex space-x-4">
-              <SocialLink href="#">
-                <Twitter className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
-              </SocialLink>
-              <SocialLink href="#">
-                <Github className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
-              </SocialLink>
-              <SocialLink href="#">
-                <Linkedin className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
-              </SocialLink>
-            </div>
           </div>
         </motion.div>
       </div>

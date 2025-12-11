@@ -54,14 +54,14 @@ const Hero = () => {
             className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-primary-dark leading-tight mb-6"
             variants={itemVariants}
           >
-            Lorem Ipsum Dolor Sit Amet
+            TecnoImagen Dental 3D
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             className="text-base sm:text-xl text-primary-dark mb-8 leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-          </motion.p>
+          </motion.p> */}
         </motion.div>
         <motion.div
           className="mt-12 sm:mt-16 relative max-w-6xl mx-auto"
@@ -87,7 +87,7 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
             >
               <img
-                src={DESIGN_IMG_2}
+                src={DESIGN_IMG_1}
                 alt="Design 2"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
               />
@@ -99,7 +99,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
             >
               <img
-                src={DESIGN_IMG_3}
+                src={DESIGN_IMG_1}
                 alt="Design 3"
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
               />
