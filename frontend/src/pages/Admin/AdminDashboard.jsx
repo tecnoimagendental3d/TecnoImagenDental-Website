@@ -104,8 +104,8 @@ const CreateUserModal = ({ isOpen, onClose, onSave }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg mx-4 max-h-[90vh] overflow-hidden">
-        <div className="flex items-center justify-between p-6 border-b border-gray-100">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg mx-4 max-h-[90vh] flex flex-col">
+        <div className="flex items-center justify-between p-6 border-b border-gray-100 flex-shrink-0">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-emerald-100 rounded-xl">
               <UserPlus className="w-5 h-5 text-emerald-600" />
@@ -120,7 +120,7 @@ const CreateUserModal = ({ isOpen, onClose, onSave }) => {
           </button>
         </div>
 
-        <form onSubmit={handleSubmit} className="p-6 space-y-4 overflow-y-auto max-h-[60vh]">
+        <form onSubmit={handleSubmit} className="p-6 space-y-4 overflow-y-auto flex-1">
           {/* Role Selection */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Tipo de Usuario</label>
@@ -204,7 +204,7 @@ const CreateUserModal = ({ isOpen, onClose, onSave }) => {
           )}
         </form>
 
-        <div className="flex gap-3 p-6 border-t border-gray-100 bg-gray-50">
+        <div className="flex gap-3 p-6 border-t border-gray-100 bg-gray-50 flex-shrink-0">
           <button type="button" onClick={onClose} className="flex-1 py-2.5 px-4 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-100">Cancelar</button>
           <button onClick={handleSubmit} disabled={isLoading}
             className={`flex-1 py-2.5 px-4 text-white rounded-lg font-medium disabled:opacity-50 flex items-center justify-center gap-2 ${formData.role === 'admin' ? 'bg-purple-600 hover:bg-purple-700' : 'bg-emerald-600 hover:bg-emerald-700'}`}>
@@ -273,26 +273,26 @@ const EditUserModal = ({ isOpen, onClose, user, onSave }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
-      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg mx-4 max-h-[90vh] overflow-hidden">
-        <div className="flex items-center justify-between p-6 border-b border-gray-100">
+      <div className="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg mx-4 max-h-[90vh] flex flex-col">
+        <div className="flex items-center justify-between p-6 border-b border-gray-100 flex-shrink-0">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-primary-teal/10 rounded-xl"><Edit className="w-5 h-5 text-primary-teal" /></div>
             <div>
               <h2 className="text-xl font-semibold text-gray-800">Editar Usuario</h2>
-              <p className="text-sm text-gray-500">{user.email}</p>
+              <p className="text-sm text-gray-500 truncate max-w-[200px]">{user.email}</p>
             </div>
           </div>
           <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-lg"><X className="w-5 h-5 text-gray-500" /></button>
         </div>
 
         {user.passwordResetRequested && (
-          <div className="mx-6 mt-4 p-3 bg-orange-50 rounded-lg border border-orange-200 flex items-center gap-2">
+          <div className="mx-6 mt-4 p-3 bg-orange-50 rounded-lg border border-orange-200 flex items-center gap-2 flex-shrink-0">
             <KeyRound className="w-4 h-4 text-orange-600" />
             <span className="text-sm text-orange-700 font-medium">Solicitó cambio de contraseña</span>
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="p-6 space-y-4 overflow-y-auto max-h-[60vh]">
+        <form onSubmit={handleSubmit} className="p-6 space-y-4 overflow-y-auto flex-1">
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
@@ -340,7 +340,7 @@ const EditUserModal = ({ isOpen, onClose, user, onSave }) => {
           </div>
         </form>
 
-        <div className="flex gap-3 p-6 border-t border-gray-100 bg-gray-50">
+        <div className="flex gap-3 p-6 border-t border-gray-100 bg-gray-50 flex-shrink-0">
           <button type="button" onClick={onClose} className="flex-1 py-2.5 px-4 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-100">Cancelar</button>
           <button onClick={handleSubmit} disabled={isLoading}
             className="flex-1 py-2.5 px-4 bg-primary-teal text-white rounded-lg font-medium hover:bg-primary-dark disabled:opacity-50 flex items-center justify-center gap-2">
