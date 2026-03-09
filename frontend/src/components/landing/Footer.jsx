@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Twitter, Github, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Phone, Mail } from "lucide-react";
 import LOGO from "../../assets/Logo/Logo-Horizontal06.png";
 import { motion } from "framer-motion";
 
@@ -72,38 +72,39 @@ const Footer = () => {
               />
             </Link>
             <p className="text-gray-100 leading-relaxed max-w-sm hover:text-primary-teal transition-colors duration-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Líderes en imagenología dental con tecnología de vanguardia. Tomografías 3D, radiografías panorámicas y cefalometrías con la más alta precisión diagnóstica.
             </p>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Lorem Ipsum</h3>
+            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Servicios</h3>
             <ul className="space-y-2">
               <li>
-                <FooterLink href="#features">Lorem Ipsum</FooterLink>
+                <FooterLink href="#features">Tomografía 3D</FooterLink>
               </li>
               <li>
-                <FooterLink href="#testimonials">Dolor Sit</FooterLink>
+                <FooterLink href="#features">Radiografía Panorámica</FooterLink>
               </li>
               <li>
-                <FooterLink href="#faq">Amet Consectetur</FooterLink>
+                <FooterLink href="#features">Cefalometría Digital</FooterLink>
               </li>
             </ul>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Adipiscing Elit</h3>
+            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Navegación</h3>
             <ul className="space-y-2">
-              <li><FooterLink to="/about">Sed Do Eiusmod</FooterLink></li>
-              <li><FooterLink to="/contact">Tempor Incididunt</FooterLink></li>
+              <li><FooterLink href="#features">Servicios</FooterLink></li>
+              <li><FooterLink href="#testimonials">Testimonios</FooterLink></li>
+              <li><FooterLink href="#faq">Preguntas Frecuentes</FooterLink></li>
             </ul>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Magna Aliqua</h3>
+            <h3 className="text-base font-semibold mb-4 text-white hover:text-primary-teal transition-colors duration-300">Contacto</h3>
             <ul className="space-y-2">
               <li>
-                <FooterLink to="/privacy">Ut Enim Ad</FooterLink>
+                <FooterLink href="tel:+123456789">Teléfono</FooterLink>
               </li>
               <li>
-                <FooterLink to="/terms">Minim Veniam</FooterLink>
+                <FooterLink href="mailto:info@tecnoimagendental.com">Correo Electrónico</FooterLink>
               </li>
             </ul>
           </motion.div>
@@ -114,17 +115,17 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-100 hover:text-primary-teal transition-colors duration-300">
-              &copy; 2025 Lorem Ipsum. All rights reserved.
+              &copy; 2025 Tecno Imagen Dental 3D. Todos los derechos reservados.
             </p>
             <div className="flex space-x-4">
-              <SocialLink href="#">
-                <Twitter className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
+              <SocialLink href="https://instagram.com/tecnoimagendental3d">
+                <Instagram className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
               </SocialLink>
-              <SocialLink href="#">
-                <Github className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
+              <SocialLink href="https://facebook.com/tecnoimagendental3d">
+                <Facebook className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
               </SocialLink>
-              <SocialLink href="#">
-                <Linkedin className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
+              <SocialLink href="mailto:info@tecnoimagendental.com">
+                <Mail className="w-5 h-5 group-hover:text-primary-orange transition-colors duration-300" />
               </SocialLink>
             </div>
           </div>
