@@ -53,13 +53,13 @@ const Features = () => {
             className="text-3xl sm:text-4xl font-extrabold text-primary-dark mb-4"
             variants={itemVariants}
           >
-            Lorem Ipsum Dolor Sit Amet
+            Nuestros Servicios
           </motion.h2>
           <motion.p
             className="text-xl text-primary-dark max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Tecnología de punta en imagenología dental para diagnósticos precisos y tratamientos exitosos.
           </motion.p>
         </motion.div>
         <motion.div
@@ -86,7 +86,7 @@ const Features = () => {
                 href="#"
                 className="inline-flex items-center text-primary-dark font-medium mt-4 hover:text-primary-teal transition-all duration-300 group-hover:translate-x-2"
               >
-                Lorem Ipsum <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                Saber más <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
             </motion.div>
           ))}

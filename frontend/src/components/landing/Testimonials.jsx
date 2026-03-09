@@ -59,13 +59,13 @@ const Testimonials = () => {
             className="text-3xl sm:text-4xl font-extrabold text-primary-dark mb-4"
             variants={itemVariants}
           >
-            Lorem Ipsum Dolor Sit
+            Lo Que Dicen Nuestros Clientes
           </motion.h2>
           <motion.p
             className="text-xl text-primary-dark max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            La confianza de profesionales dentales es nuestra mayor satisfacción. Conoce sus experiencias con nuestros servicios.
           </motion.p>
         </motion.div>
         <motion.div

@@ -3,79 +3,79 @@ import { BarChart2, FileText, LayoutDashboard, Mail, Sparkles, Users, Image, Shi
 export const FEATURES = [
   {
     icon: Sparkles,
-    title: "Lorem Ipsum Dolor",
+    title: "Tomografía 3D",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Imágenes tridimensionales de alta resolución para diagnósticos precisos en implantología, ortodoncia y cirugía maxilofacial.",
   },
   {
     icon: BarChart2,
-    title: "Consectetur Adipiscing",
+    title: "Radiografía Panorámica",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Visualización completa de la estructura dental y maxilar en una sola imagen para evaluaciones integrales.",
   },
   {
     icon: Mail,
-    title: "Sed Do Eiusmod",
+    title: "Cefalometría Digital",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "Análisis cefalométrico preciso para planificación de tratamientos ortodónticos y ortognáticos.",
   },
   {
     icon: FileText,
-    title: "Magna Aliqua",
+    title: "Entrega Digital",
     description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Resultados disponibles en formato digital con acceso rápido y seguro para profesionales y pacientes.",
   },
 ];
 
 export const TESTIMONIALS = [
   {
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    author: "Lorem Ipsum",
-    title: "Dolor Sit Amet",
-    avatar: "https://placehold.co/100x100/0b2f77/ffffff?text=LI"
+    quote: "La calidad de las tomografías 3D de Tecno Imagen Dental ha mejorado significativamente mis diagnósticos. El servicio es rápido y profesional.",
+    author: "Dr. Carlos Mendoza",
+    title: "Cirujano Maxilofacial",
+    avatar: "https://placehold.co/100x100/0b2f77/ffffff?text=CM"
   },
   {
-    quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    author: "Consectetur",
-    title: "Adipiscing Elit",
-    avatar: "https://placehold.co/100x100/12c3cc/ffffff?text=CA"
+    quote: "Excelente precisión en las cefalometrías. Me permite planificar tratamientos ortodónticos con total confianza. Altamente recomendado.",
+    author: "Dra. María González",
+    title: "Ortodoncista",
+    avatar: "https://placehold.co/100x100/12c3cc/ffffff?text=MG"
   },
   {
-    quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    author: "Sed Do",
-    title: "Eiusmod Tempor",
-    avatar: "https://placehold.co/100x100/e56c1a/ffffff?text=SD"
+    quote: "El acceso digital a los estudios es muy conveniente. Puedo revisar las imágenes con mis pacientes de forma inmediata. Servicio de primera.",
+    author: "Dr. Roberto Silva",
+    title: "Implantólogo Dental",
+    avatar: "https://placehold.co/100x100/e56c1a/ffffff?text=RS"
   }
 ];
 
 export const FAQS = [
   {
-    question: "Lorem ipsum dolor sit amet?",
-    answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+    question: "¿Qué tipos de estudios de imagenología dental ofrecen?",
+    answer: "Ofrecemos tomografía computarizada 3D (CBCT), radiografías panorámicas, cefalometrías digitales, radiografías periapicales y oclusales. Todos nuestros estudios utilizan tecnología de última generación."
   },
   {
-    question: "Consectetur adipiscing elit?",
-    answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
+    question: "¿Cuánto tiempo tarda en estar listo mi estudio?",
+    answer: "La mayoría de nuestros estudios están disponibles en formato digital el mismo día. Las tomografías 3D y estudios especializados pueden estar listos en 24-48 horas dependiendo de la complejidad."
   },
   {
-    question: "Sed do eiusmod tempor?",
-    answer: "Magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+    question: "¿Necesito cita previa para realizar un estudio?",
+    answer: "Recomendamos agendar una cita para garantizar disponibilidad y reducir tiempos de espera. Sin embargo, también atendemos pacientes sin cita según disponibilidad."
   },
   {
-    question: "Ut enim ad minim veniam?",
-    answer: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+    question: "¿Cómo puedo acceder a mis resultados?",
+    answer: "Los resultados están disponibles a través de nuestra plataforma digital segura. Recibirás un enlace de acceso por correo electrónico o puedes consultarlos directamente desde tu cuenta en nuestro portal."
   },
   {
-    question: "Duis aute irure dolor?",
-    answer: "Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim."
+    question: "¿Es segura la radiación de los estudios dentales?",
+    answer: "Sí, utilizamos equipos de última generación con dosis mínimas de radiación. Nuestras tomografías 3D emiten significativamente menos radiación que las tomografías médicas convencionales."
   },
   {
-    question: "Magna aliqua ut enim?",
-    answer: "Ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse."
+    question: "¿Trabajan con aseguradoras dentales?",
+    answer: "Sí, trabajamos con las principales aseguradoras dentales. Te recomendamos verificar la cobertura de tu plan antes de tu cita. Nuestro equipo puede ayudarte con la documentación necesaria."
   },
   {
-    question: "Excepteur sint occaecat?",
-    answer: "Cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem."
+    question: "¿Puedo solicitar estudios para mis pacientes como profesional dental?",
+    answer: "Por supuesto. Ofrecemos cuentas especiales para profesionales dentales con acceso a historial de estudios, facturación simplificada y entrega prioritaria de resultados."
   }
 ];
 

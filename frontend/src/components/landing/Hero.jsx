@@ -54,13 +54,13 @@ const Hero = () => {
             className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-primary-dark leading-tight mb-6"
             variants={itemVariants}
           >
-            Lorem Ipsum Dolor Sit Amet
+            Tecno Imagen Dental 3D
           </motion.h1>
           <motion.p
             className="text-base sm:text-xl text-primary-dark mb-8 leading-relaxed max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            Somos líderes en imagenología dental con tecnología de vanguardia. Ofrecemos estudios de tomografía 3D, radiografías panorámicas y cefalométricas con la más alta precisión diagnóstica para profesionales de la salud dental.
           </motion.p>
         </motion.div>
         <motion.div
