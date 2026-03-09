@@ -48,32 +48,32 @@ const ProfileDropdown = ({
             </span>
           </div>
         )}
-        <div className="hidden sm:block text-left">
+        <div className="hidden sm:block text-left max-w-[180px]">
           <div className="flex items-center gap-1.5">
-          <p className="text-sm font-medium text-gray-900">{companyName}</p>
+            <p className="text-sm font-medium text-gray-900 truncate">{companyName}</p>
             {isAdmin && (
-              <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-purple-100 text-purple-700 rounded">
+              <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-purple-100 text-purple-700 rounded flex-shrink-0">
                 ADMIN
               </span>
             )}
           </div>
-          <p className="text-xs text-gray-500">{email}</p>
+          <p className="text-xs text-gray-500 truncate">{email}</p>
         </div>
         <ChevronDown className="h-4 w-4 text-gray-400" />
       </button>
 
       {isOpen && (
         <div className="absolute right-0 mt-2 w-56 rounded-xl shadow-lg border py-2 z-50 bg-white border-gray-100">
-          <div className="px-4 py-3 border-b border-gray-100">
+          <div className="px-4 py-3 border-b border-gray-100 overflow-hidden">
             <div className="flex items-center gap-2">
-            <p className="text-sm font-medium text-gray-900">{companyName}</p>
+              <p className="text-sm font-medium text-gray-900 truncate">{companyName}</p>
               {isAdmin && (
-                <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-purple-100 text-purple-700 rounded">
+                <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-purple-100 text-purple-700 rounded flex-shrink-0">
                   ADMIN
                 </span>
               )}
             </div>
-            <p className="text-xs text-gray-500">{email}</p>
+            <p className="text-xs text-gray-500 truncate">{email}</p>
           </div>
 
           {/* Home Link (shown in admin dashboard) */}
