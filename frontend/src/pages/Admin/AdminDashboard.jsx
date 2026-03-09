@@ -120,8 +120,8 @@ const CreateUserModal = ({ isOpen, onClose, onSave }) => {
           </button>
         </div>
 
-        <div className="max-h-[60vh] overflow-y-auto">
-        <form onSubmit={handleSubmit} className="p-6 space-y-4">
+        <div className="max-h-[calc(100vh-250px)] overflow-y-auto">
+        <form onSubmit={handleSubmit} className="p-6 space-y-4 pb-2">
           {/* Role Selection */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">Tipo de Usuario</label>
@@ -287,7 +287,7 @@ const EditUserModal = ({ isOpen, onClose, user, onSave }) => {
           <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-lg"><X className="w-5 h-5 text-gray-500" /></button>
         </div>
 
-        <div className="max-h-[60vh] overflow-y-auto">
+        <div className="max-h-[calc(100vh-250px)] overflow-y-auto">
         {user.passwordResetRequested && (
           <div className="mx-6 mt-4 p-3 bg-orange-50 rounded-lg border border-orange-200 flex items-center gap-2">
             <KeyRound className="w-4 h-4 text-orange-600" />
