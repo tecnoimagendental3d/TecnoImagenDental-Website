@@ -1,6 +1,6 @@
-import DESIGN_IMG_1 from "../../assets/Design/01-Diseño-Feed.png";
-import DESIGN_IMG_2 from "../../assets/Design/02-Diseño-Feed.png";
-import DESIGN_IMG_3 from "../../assets/Design/03-Diseño-Feed.png";
+import DESIGN_IMG_1 from "../../assets/Design/03-Diseño-Feed.png";
+import DESIGN_IMG_2 from "../../assets/Design/04-Diseño-Feed.png";
+import DESIGN_IMG_3 from "../../assets/Design/05-Diseño-Feed.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
